@@ -1,0 +1,177 @@
+html,
+body {
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex; 
+   -ms-flex-align: center;
+   padding-top: 20px;
+   padding-bottom: 40px;
+
+   margin: 0, 0;
+   padding: 0, 0;
+   
+   display: list-item;
+   flex-direction: row;
+   flex-wrap: wrap;  
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background-color: rgba(205, 207, 228, 0.301)
+   /* background-color:rgba(248, 94, 4, 0.144); */
+}
+
+  .grid {
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-areas: "img1 login"
+                         "img2 login";
+    }
+  
+  .img1 { grid-area: img1;  height: 100px; width: 700px; }
+  .img2 { grid-area: img2; width: 700px;}
+  .login { grid-area: login;  width: 400px;}
+  
+
+ 
+p {
+    color: lightgoldenrodyellow;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #a3a19c;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+input {
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid #fabc37;
+    width: 200px;
+    border-radius: 24px;
+    color: lavender;
+    transition: 0.25s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    width: 230px;
+    border-color: khaki;
+    outline: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(#ffda63, #fca714);
+    border: 0;
+    color: rgb(128, 33, 33);
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    height: 35px;
+    width: 130px;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95s);
+}
+
+a:hover {
+    color: #fca714;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-box {
+    width: 320px;
+    padding: 20px;
+    background: #363535;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.contButton {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+.link {
+
+    font-size: 15px;
+    font-style: italic;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.img {
+    height: 250px;
+    width: 700px;
+    margin-left: 230px; 
+    margin-top: 20px; 
+    border-radius: 30px;
+  }
+
+.slider {
+    /* Con overflow hidden hace que solo se puestre un imagen a la vez en el slider */
+    overflow: hidden;
+    /* aqui configuramos el tamaño del slider con width */
+    width: 650px;
+    height: 400px;
+     position: absolute;  
+     margin-left: 260px; 
+     border-radius: 50px;
+    
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin-top: 40px;
+    /* con margin se colocan las imagenes una al lado de la otra */
+    margin: 0;
+    left: 0;
+    /* tiempo de transicion en cada imagen */
+    animation: 20s slider infinite;
+    /* evitando un cambio brusco de la ultima a la primera es un orden creciente y decreciente */
+    animation-direction: alternate-reverse;
+    /* aqui cambiamos la curva de la animacion */
+    animation-timing-function: linear;
+}
+
+.slider figure img {
+    width: 650px;
+    height: 400px;
+    float: left;
+}
+
+/* esto son las paradas que realiza el slider */
+@keyframes slider {
+    0% { left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
+}

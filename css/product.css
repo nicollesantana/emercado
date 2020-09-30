@@ -1,0 +1,76 @@
+.grid {
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-areas: " box-search box-filter";
+                         
+    }
+  
+  .box-search { grid-area: search;  height: 100px;width: 700px; }
+  .box-filter { grid-area: filter; width: 700px;}
+ 
+.fox-filter{
+    width: 700px;
+    margin-left: 230px; 
+    margin-top: 20px; 
+  
+}
+/* boton agreagr al carrito */
+.addToCart {
+  background: linear-gradient(#4fc1ee, #d4d4d3);
+  
+  border: 0;
+  color: rgb(2, 2, 2);
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 0;
+  height: 30px;
+  width: 160px;
+  float: right;
+  outline: none;
+
+  /* llevando el boton totalmente a la derecha */
+  /* position: absolute;
+  top:0; 
+  right:0;  */
+}
+
+.addToCart:hover {
+  opacity: 1;
+  width: 165px;
+  height: 35px;
+}
+
+.addToCart:active {
+  transform: scale(0.95s);
+}
+
+.buyButton {
+  background: linear-gradient(#ffda63, #ffa200);
+  border: 0;
+  color: rgb(2, 0, 0);
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 0;
+  height: 30px;
+  width: 120px;
+  float: right;
+  outline: none;
+
+  /* llevando el boton totalmente a la derecha */
+  /* position: absolute;
+  top:0; 
+  right:0;  */
+}
+
+.buyButton:hover {
+  opacity: 1;
+  width: 130px;
+  height: 35px;
+
+}
+
+.buyButton:active {
+  transform: scale(0.95s);
+}

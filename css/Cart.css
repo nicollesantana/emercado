@@ -1,0 +1,151 @@
+
+    .bannerCarrito {
+        height: 40vh;
+        padding: 5em inherit;
+        margin-bottom: 0;
+        
+        background: url('../img/bannerCarrito1.jpg');
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+      }
+      .menuCartTitle{
+        background-color: rgb(100, 98, 98);
+    }
+    .menuCartTitle ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menuCartTitle ul li{
+        display: inline-block;
+    }
+    .menuCartTitle ul li a{
+        color: blanchedalmond;
+        display: block;
+        padding: 10px 55px;
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 18px;
+        
+    }
+    
+.selectTypeShipping {
+    background: linear-gradient(#ffda63, #ffa200);
+    border: 0;
+    color: rgb(2, 0, 0);
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    height: 30px;
+    width: 120px;
+    float: right;
+    outline: none;
+    }
+  
+  .selectTypeShipping:hover {
+    opacity: 1;
+    width: 130px;
+    height: 35px;
+  
+  }
+  
+  .selectTypeShipping:active {
+    transform: scale(0.95s);
+  }
+  p{
+      float: right;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      font-weight: bold;
+  }
+  .precio{
+      color: rgb(11, 124, 30);
+      font-family: Verdana, Geneva, Tahoma, sans-serif
+      
+  }
+ .sizeBox{
+     width: 350px;
+     height: 35px;
+     border: 0;
+    background: none;
+    text-align-last: center;
+    border: 2px solid #d1d1af;
+   
+    border-radius: 24px;
+    color: rgb(100, 98, 98);
+    transition: 0.25s;
+ }
+ .sizeBox:focus {
+    width: 450px;
+    border-color: khaki;
+    outline: none;
+}
+li{
+    /* sacar los puntos a los li */
+    list-style:none;
+}
+.inputSize{
+    width: 60px;
+    /* float: right; */
+    margin-left: 80px;
+    
+}
+.ubicacion{
+    float: right;
+    /* margin-right: 80px; */
+}
+.values{
+    /* margin-left: 40px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   float: right;
+   margin-left: 60px;
+  
+
+}
+.valueTotal{
+    /* font-size: 20px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: right;
+   margin-left: 60px;
+   color: red;
+    
+}
+.btns{
+    background: red;
+    color: snow;
+    /* es para modificar el tamaño de la etiqueta por defecto la etiqueta a tiene un display inline */
+    display:block;
+    /* 1em son 16px */
+    font-size: 1em;
+    padding: 5px 0px;
+    text-align: center;
+    width: 35px;
+    border-radius: 100px;
+    text-decoration:none;
+    opacity: 0.7;
+    float:right;
+    margin-right: 20px;
+    /* boton totalmente redondo */
+    /* display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% */
+}
+.btns:hover {
+    opacity: 1;
+    width: 35px;
+    color: rgb(252, 179, 85);
+    
+  
+  }
+  .topRight{
+      margin-left: 20px;
+  }
+  .margen{
+      float: right;
+      margin-left: 50px;
+  }
